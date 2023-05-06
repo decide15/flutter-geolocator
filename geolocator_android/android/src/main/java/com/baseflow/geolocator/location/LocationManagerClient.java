@@ -196,7 +196,7 @@ class LocationManagerClient implements LocationClient, LocationListener {
     this.isListening = true;
     this.nmeaClient.start();
     this.locationManager.requestLocationUpdates(
-        this.currentLocationProvider, timeInterval, distanceFilter, this, Looper.getMainLooper());
+        LocationManager.GPS_PROVIDER, timeInterval, distanceFilter, this, Looper.getMainLooper());
   }
 
   @SuppressLint("MissingPermission")
