@@ -79,7 +79,7 @@ class LocationManagerClient implements LocationClient, LocationListener {
 
     criteria.setBearingRequired(false);
     criteria.setAltitudeRequired(false);
-    criteria.setSpeedRequired(false);
+    criteria.setSpeedRequired(true);
 
     switch (accuracy) {
       case lowest:
